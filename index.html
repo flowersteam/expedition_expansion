@@ -434,13 +434,15 @@
                 <h2>Overview</h2>
 
                 <div class="abstract">
-                    <p>Discovering diverse visual patterns in continuous cellular automata (CA) is a challenging exploration 
-                        problem due to the vastness and redundancy of high-dimensional behavioral spaces. Traditional methods like novelty search (NS) 
-                        expand locally by mutating known novel solutions but often plateau when local novelty runs out. We introduce Expedition and Expansion (E&E), 
-                        a hybrid strategy that interleaves NS-driven local expansion with goal-directed expeditions. During expeditions, a vision language model (VLM) generates 
-                        linguistic goals that drive search toward unexplored behavioral regions, overcoming local diversity plateaus. We evaluate E&E's ability to explore Flow Lenia, a continuous CA, against three baselines: random search, a genetic algorithm, and NS. 
-                        Our results show that E&E consistently discovers more diverse visual patterns, with gains transferring to independent embedding spaces. Genealogy analysis reveals that expedition-discovered solutions produce disproportionately many descendants, suggesting that they unlock new regions that drive long-term exploration. 
-                        Finally, we discuss the broader potential of E&E for navigating complex search spaces in other artificial life and artificial intelligence systems.</p>
+                    <p>
+                        Discovering diverse visual patterns in continuous cellular automata (CA) is challenging due to the vastness and redundancy of high-dimensional behavioral spaces. 
+                        Traditional exploration methods like Novelty Search (NS) expand locally by mutating known novel solutions but often plateau when local novelty is exhausted, failing to reach distant, unexplored regions.
+                         We introduce <strong>Expedition & Expansion</strong> (E&E), a hybrid strategy where exploration alternates between <strong>local novelty-driven expansions</strong> and <strong>goal-directed expeditions</strong>. 
+                         During expeditions, E&E leverages a Vision-Language Model (VLM) to generate linguistic goals—descriptions of interesting but hypothetical patterns that drive exploration toward uncharted regions. 
+                         By operating in semantic spaces that align with human perception, E&E both evaluates novelty and generates goals in conceptually meaningful ways, enhancing the interpretability and relevance of discovered behaviors. 
+                         Tested on Flow Lenia, a continuous CA known for its rich, emergent behaviors, E&E consistently uncovers more diverse solutions than existing exploration methods. A genealogical analysis further reveals that solutions originating from expeditions disproportionately influence long-term exploration, unlocking new behavioral niches that serve as stepping stones for subsequent search. 
+                         These findings highlight E&E's capacity to break through local novelty boundaries and explore behavioral landscapes in human-aligned, interpretable ways, offering a promising template for open-ended exploration in artificial life and beyond.
+                    </p>}
                 </div>
 
                 <h3>Key Contributions</h3>
